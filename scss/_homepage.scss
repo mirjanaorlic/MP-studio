@@ -1,0 +1,79 @@
+@include main;
+
+.wrapper {
+    padding: 70px;
+    background-color: #f5f5dc;
+}
+// Showcase
+.showcase {
+    height: auto;
+    font-size: 2.5rem;
+    padding-top: 70px;
+    .showcase__heading {
+        padding-bottom: 50px;
+        &::selection {
+            background-color: salmon;
+        }
+    }
+    .showcase__paragraph::selection {
+        background-color: salmon;
+    }
+}
+// Accordion
+.acordion-wrap {
+    height: 100%;
+    font-size: 4rem;
+}
+.acc__list-item {
+    border-bottom: 5px solid salmon;
+    padding: 5rem 0;
+    position: relative;
+    .acc__img {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        right: 5px;
+    }
+}
+.acc__inner-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    .acc__paragraph {
+        color: salmon;
+        padding: 2rem 0;
+    }
+    .acc__img {
+        width: 0px;
+        height: auto;
+    }
+}
+////////////////////////////////////////////////////////////
+@media screen and (max-width: 768px) {
+    .acordion-wrap {
+        height: auto;
+    }
+}
+@media screen and (max-width: 375px) {
+    // Showcase
+    .showcase {
+        font-size: 1.5rem;
+    }
+
+    // Accordion
+    .acordion-wrap {
+        font-size: 1.5rem;
+    }
+    .acc__list-item {
+        padding: 4rem 0;
+        .acc__img {
+            width: 50px;
+            right: 0px;
+        }
+    }
+    .acc__inner-content {
+        .acc__paragraph {
+            padding: 2rem 0;
+        }
+    }
+}

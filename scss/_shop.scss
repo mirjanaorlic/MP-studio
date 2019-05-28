@@ -1,0 +1,81 @@
+// Shop page
+// Tabs
+.wrapper--shop {
+    padding: 70px;
+    background-color: #f5f5dc;
+    height: 100vh;
+}
+.tabs {
+    height: 100vh;
+}
+.tabs-wrapper {
+    height: 100%;
+    background-color: #f5f5dc;
+}
+.tabs-list {
+    display: flex;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+}
+.tabs__list-item {
+    padding: 2rem;
+    background-color: #fff;
+    background-color: #f5f5dc;
+    .tab__title {
+        color: salmon; 
+    }
+    &:hover {
+       background-color: salmon; 
+       .tab__title {
+           color: #000;
+       }
+    }
+}
+.card {
+    display: none;
+    padding: 2rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+    background-color: #f5f5dc;
+    .card__title {
+        color: salmon;
+        margin-bottom: 1rem;
+    }
+    .card__paragraph::selection {
+        background-color: salmon;
+    }
+}
+.card.active {
+    display: block;
+}
+/////////////////////////////////////////////////////
+// @media screen and (max-width: 768px) {
+//     .tabs__list-item {
+//         font-size: 1rem;
+//     }
+// }
+/////////////////////////////////////////////////////
+@media screen and (max-width: 768px) {
+    .wrapper--shop {
+        padding: 0;
+        padding-top: 70px;
+        height: 100%;
+    }
+    .tabs {
+        height: 100%;
+    }
+    .tabs-list {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .tabs__list-item {
+        padding: 1rem;
+    }
+    .card {
+        padding: 4rem;
+        text-align: center;
+        font-size: 1.5rem; 
+    }
+}

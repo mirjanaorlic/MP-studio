@@ -1,0 +1,57 @@
+// Header
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid #000;
+    height: 40px;
+}
+.logo__text {
+    text-decoration: none;
+}
+// Header styles for work page
+.header--work {
+    border-bottom: 4px solid salmon;
+    color: salmon;
+    .logo__text {
+        color: salmon;
+    }
+    .list__link {
+        color: salmon;
+    }
+}
+.list {
+    display: flex;
+    .list__item {
+        margin-left: 20px;
+        list-style: none;
+    }
+    .list__link {
+       text-decoration: none;
+    }
+}
+/////////////////////////////////////////////////////
+@media screen and (max-width: 768px) {
+    .header--shop {
+        margin: 0 70px;
+    }
+}
+/////////////////////////////////////////////////////
+@media screen and (max-width: 375px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 200px;
+    }
+    .list {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        .list__item {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+// Contact
+.contact-page {
+    background-color: salmon;
+}
+.wrapper--contact {
+    background-color: salmon;
+}
+.contact {
+    padding-top: 7rem;
+    .contact__heading {
+        font-size: 7rem;
+    }
+    .contact__paragraph {
+        font-size: 5rem;
+    }
+    .contact__link {
+        text-decoration: none;
+        position: relative;
+        margin: 3px;
+        &:hover,
+        &:focus,
+        &:active {
+        &:after {
+            width: 100%;
+        }
+      }
+      &:after {
+          content: '';
+          position: absolute;
+          right: 0; 
+          bottom: -5px;
+          height: 4px;
+          width: 0;
+          transition: width .25s;
+          background-color: #000;
+        }
+    }
+}
+/////////////////////////////////////////////////////
+@media screen and (max-width: 768px) {
+    .contact {
+        .contact__heading {
+            font-size: 6rem;
+        }
+        .contact__paragraph {
+            font-size: 4rem;
+        }
+    }
+}
+/////////////////////////////////////////////////////
+@media screen and (max-width: 375px) {
+    .contact {
+        .contact__heading {
+            font-size: 4rem;
+            text-align: center;
+        }
+        .contact__paragraph {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}
