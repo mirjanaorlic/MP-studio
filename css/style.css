@@ -248,11 +248,7 @@
   background-color: #f5f5dc;
   height: 100vh; }
 
-.tabs {
-  height: 100vh; }
-
 .tabs-wrapper {
-  height: 100%;
   background-color: #f5f5dc; }
 
 .tabs-list {
@@ -289,8 +285,7 @@
 @media screen and (max-width: 768px) {
   .wrapper--shop {
     padding: 0;
-    padding-top: 70px;
-    height: 100%; }
+    padding-top: 70px; }
 
   .tabs {
     height: 100%; }
