@@ -117,32 +117,32 @@
         height: auto;
         .box1 {
             width: 100%;
-            height: 40vh;
+            height: 100vh;
+            .box__heading {
+                font-size: 2rem;
+               }
         }
         .box2 {
             height: 100vh;
             width: 100%;
         }
     }
-    .box1 {
-       .box__heading {
-         font-size: 2rem;
-        }
-    }
-    
+   
 }
 ////////////////////////////////////////////////////
 @media screen and (max-width: 375px) {
     .articles {
         .box {
             text-align: center;
+            .box__heading {
+                font-size: 1.5rem;
+               }
         }
     }
+   
     .box1 {
         padding: 1rem;
-    .box__heading {
-        font-size: 1.5rem;
-        }
+       
         .box__date {
             font-size: 1rem;
             color: salmon;
@@ -151,15 +151,15 @@
     .box2 {
         align-items: center;
         justify-content: center;
+        padding-bottom: 4rem;
+        .small-box__heading {
+            font-size: 1rem;
+        }
     }
     .small-box {
         width: 100%;
-        .small-box__date {
-            font-size: .5rem;
-        }
-        .small-box__heading {
-            font-size: 1.5rem;
-        }
+        font-size: .4rem;
+
         .small-box__link {
             transform: translate(-50%);
         }
